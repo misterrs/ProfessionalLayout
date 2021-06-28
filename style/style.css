@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #222222;
+}
+
+.container {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+}
+
+.left img {
+  padding-right: 41px;
+}
+
+.right img {
+  padding-left: 33px;
+}
+
+.headlogo {
+  background-color: #F1E4E6;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 140px;
+}
+
+.headlogo img {
+  max-width: 800px;
+  width: 100%;
+}
+
+.logotext {
+  max-width: 477px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 289px;
+  padding-right: 331px;
+}
+
+.line {
+  width: 12px;
+  background-color: #F16D7F;
+  float: left;
+  max-height: 96px;
+  height: 100%;
+  margin-right: 16px;
+}
+
+.headtext {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: #222222;
+}
+
+.headtext2 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: #222222;
+}
+
+.headtext2 span {
+  color: #F16D7F;
+}
+
+.category {
+  margin: 0 auto;
+}
+
+.categorytop {
+  margin: 0 auto;
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categoryboxtop {
+  background: #233243;
+  padding: 105px 103px;
+  max-width: 360px;
+  width: 100%;
+}
+
+.categoryboxtop:not(:last-child) {
+  margin-right: 30px;
+}
+
+.categoryboxbottom {
+  margin: 0 auto;
+  margin-top: 30px;
+  background: #233243;
+  padding: 65px 0;
+}
+
+.forwomen {
+  background-image: url(../img/forwomen.jpg);
+}
+
+.formen {
+  background-image: url(../img/formen.jpg);
+}
+
+.forkids {
+  background-image: url(../img/forkids.jpg);
+}
+
+.accesorise {
+  background-image: url(../img/acessorise.jpg);
+}
+
+.categorytext {
+  text-align: center;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.categorytextcolor {
+  color: #F16D7F;
+}
+
+.fetureditems {
+  padding: 96px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feturedhead {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+}
+
+.feturedtext {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+}
+
+.cardbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 47px;
+}
+
+.card {
+  max-width: 360px;
+  width: 100%;
+  text-align: start;
+  background: #F8F8F8;
+  margin-bottom: 30px;
+}
+
+.cardtext {
+  padding: 25px 28px 20px 16px;
+}
+
+.itemhead {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.itemtext {
+  padding: 13px 0 18px 0;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+}
+
+.price {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+}
+
+.hoverrecycle {
+  background-color: black;
+}
+
+.hoverimg {
+  background: url(/img/item1.png);
+  width: 360px;
+}
+
+.btn {
+  margin-top: 18px;
+  padding: 15px 39px;
+  background: none;
+  color: #F26376;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  border: #F26376 solid 1px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #F16D7F;
+  color: white;
+}
+
+.shopinfo {
+  margin-top: 95px;
+  background-color: #222224;
+  width: 100%;
+  padding: 104px 0;
+}
+
+.infocardbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infocard {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 10px;
+  max-width: 360px;
+  width: 100%;
+}
+
+.infohead {
+  padding: 16px 0 28px 0;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #FBFBFB;
+}
+
+.infotext {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #FBFBFB;
+}
+
+footer {
+  margin-top: 448px;
+  background-color: #222224;
+  padding: 24px 0;
+}
+
+.footercontent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footertext {
+  padding-top: 9px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
+}
+
+.footeritem {
+  background-color: white;
+}
+
+.footeritem:hover {
+  background-color: #F16D7F;
+}/*# sourceMappingURL=style.css.map */
