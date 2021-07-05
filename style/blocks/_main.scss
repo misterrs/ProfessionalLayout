@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $generalfont;
+  }
+  a {
+    text-decoration: none;
+  }
+  ::-webkit-details-marker {
+    display: none;
+  }
+  details {
+    list-style: none;
+  }
+  summary {
+    list-style: none;
+  }
+  .categorytext {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: $whitecolor;
+  }
+  .categorytextcolor {
+    color: $Hcolor;
+  }
+  .container {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  header {
+    background-color:$menubg;
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      padding: 18px 0;
+  
+      &__left {
+        & img {
+          padding-right: 41px;
+        }
+      }
+      &__right {
+        & img {
+          padding-left: 33px;
+        }
+      }
+      & .icon {
+        position: relative;
+      }
+      & span {
+        position: absolute;
+        display: inline-block;
+        align-items: flex-start;
+        background-color: #F16D7F;
+        padding: 3px 7px;
+        border-radius: 50%;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+      }
+    }
+  }
+  .subscribe {
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/bgsubscribe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__flex {
+      display: flex;
+      justify-content: space-between;
+      &img {
+        max-width: 359px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 97px 0 126px 0;
+        P {
+          font-family: Lato;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 24px;
+          text-align: center;
+          color: #222224;
+          padding-top: 30px;
+        }
+        img {
+          margin: 0 auto;
+        }
+      }
+      &form {
+        text-align: center;
+        width: 557px;
+        margin: 150px 0 156px 0;
+        h2 {
+          font-family: Lato;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 167.2%;
+          color: #222224;
+        }
+        p{
+          font-family: Lato;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 167.2%;
+          color: #222224;
+        }
+        .subform {
+          padding-top: 32px;
+          display: flex;
+          margin: 0 auto;
+          justify-content: center;
+          .mail {
+            background-color: #E1E1E1;
+            padding: 10px 22px;
+            border: none;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #222224;
+            opacity: 0.67;
+            border-radius: 10px 0 0 10px;
+            outline: none;
+          }
+          .subbtn {
+            padding: 10px;
+            background-color: #E05C6E;
+            border: none;
+            border-radius: 0 10px 10px 0;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+            outline: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    background-color: #222224;
+    padding: 24px 0;
+    .footercontent {
+      display: flex;
+      justify-content: space-between;
+      &__text {
+        padding-top: 9px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+      }
+      &__menu {
+        & svg {
+          background-color: white;
+          &:hover {
+            background-color: #F16D7F;
+            fill: white;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
