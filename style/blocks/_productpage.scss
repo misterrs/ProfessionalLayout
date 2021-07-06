@@ -1,0 +1,99 @@
+.carusel {
+    &__img {
+      width: 100%;
+      height: 777px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #F7F7F7;
+      background-repeat: no-repeat;
+      background-position: center;
+      svg {
+        cursor: pointer;
+        background-color:rgba(42, 42, 42, 0.15);
+      }
+    }
+  } 
+  .product {
+    position: relative;
+    z-index: 999;
+    max-width: 1140px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #EAEAEA;
+    background-color: #FFFFFF;
+    margin: -65px auto 0;
+    &__wrap {
+      padding: 0px 250px 65px 250px;
+      h2 {
+        padding-top: 65px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;  
+        color: #F16D7F;
+      }
+      h3 {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+      }
+      p {
+        padding: 48px 0 32px 0;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #5E5E5E;
+      }
+      .line__top {
+        background-color:#EF5B70;
+        width: 63px;
+        height: 3px;
+        margin: 12px auto;
+        border: none;
+      }
+      .line__bottom {
+        background-color:#EAEAEA;
+        height: 1px;
+        margin: 65px auto;
+        border: none;
+      }
+      span {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color:$Hcolor;
+      }
+    }
+    &__menu {
+      display: flex;
+      justify-content: center;
+      summary {
+        margin-right: 23px;
+        cursor: pointer;
+        &::after {
+          content: url('../img/detailssmallfiltr.png');
+          padding-left: 10px;
+        }
+      }
+    }
+    &__btn {
+      margin-top: 48px;
+      background:none;
+      border-color: #FF6A6A;
+      outline: none;
+      cursor: pointer;
+      svg {
+        fill: #FF6A6A;
+      }
+    }
+  }
