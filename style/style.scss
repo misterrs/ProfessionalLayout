@@ -51,11 +51,23 @@ header {
     &__left {
       & img {
         padding-right: 41px;
+        transform: perspective(400px) rotateX(0deg);
+        transition: transform 0.5s;
+        &:hover{
+          transform: perspective(400px) rotateX(50deg);
+          transition: 0.5s;
+        }
       }
     }
     &__right {
       & img {
         padding-left: 33px;
+        transform: perspective(400px) rotateX(0deg);
+        transition: transform 0.5s;
+        &:hover{
+          transform: perspective(400px) rotateX(50deg);
+          transition: 0.5s;
+        }
       }
     }
     & .icon {
@@ -161,6 +173,10 @@ header {
           color: #FFFFFF;
           outline: none;
           cursor: pointer;
+          &:hover {
+            transform: scale(1.1);
+            transition: 5s;
+          }
         }
       }
     }
@@ -188,6 +204,7 @@ footer {
           background-color: #F16D7F;
           fill: white;
           transition: 0.5s;
+          transform: scale(1.25);
         }
       }
     }
@@ -844,3 +861,108 @@ footer {
 
 }
 //конец страницы
+//начало страницы регистрации
+.reg-container {
+  display: flex;
+  justify-content: space-between;
+}
+.registration {
+  max-width: 360px;
+  width: 100%;
+  padding: 64px 0 96px 0;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    p {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #B1B1B1;
+      padding: 15px 0 0 0;
+    }
+    h4 {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &-field {
+      margin: 20px 0 0 0;
+      padding: 15px 0 15px 17px;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #B1B1B1;
+      border: 1px solid #A4A4A4;
+    }
+    &-radio {
+      margin: 33px 0;
+      input {
+        margin-right: 10px;
+      }
+      label {
+        margin-right: 20px;
+      }
+    }
+    button {
+      display: block;
+      box-sizing: border-box;
+      margin-top: 39px;
+      padding: 17px 29px;
+      max-width: 170px;
+      background-color: #F16D7F;
+      outline: none;
+      border: none;
+      color: white;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      svg {
+        margin-left: 20px;
+      }
+    }
+
+  }
+}
+.loyality {
+  padding: 64px 0 96px 128px;
+  h2 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  p {
+    margin: 21px 0;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  ul {
+    padding-left: 25px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    li {
+      list-style: none;
+      padding: 10px 0;
+    }
+    li::before {
+      content: url(../img/li.svg);
+      margin-right: 22px;
+    }
+  }
+}
+//конец страницы регистрации

@@ -51,9 +51,21 @@ header .menu {
 }
 header .menu__left img {
   padding-right: 41px;
+  transform: perspective(400px) rotateX(0deg);
+  transition: transform 0.5s;
+}
+header .menu__left img:hover {
+  transform: perspective(400px) rotateX(50deg);
+  transition: 0.5s;
 }
 header .menu__right img {
   padding-left: 33px;
+  transform: perspective(400px) rotateX(0deg);
+  transition: transform 0.5s;
+}
+header .menu__right img:hover {
+  transform: perspective(400px) rotateX(50deg);
+  transition: 0.5s;
 }
 header .menu .icon {
   position: relative;
@@ -162,6 +174,10 @@ header .menu span {
   outline: none;
   cursor: pointer;
 }
+.subscribe__flexform .subform .subbtn:hover {
+  transform: scale(1.1);
+  transition: 5s;
+}
 
 footer {
   background-color: #222224;
@@ -187,6 +203,7 @@ footer .footercontent__menu svg:hover {
   background-color: #F16D7F;
   fill: white;
   transition: 0.5s;
+  transform: scale(1.25);
 }
 
 .intro {
@@ -837,4 +854,109 @@ footer .footercontent__menu svg:hover {
   border: none;
   padding: 15px 42px;
   color: white;
+}
+
+.reg-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.registration {
+  max-width: 360px;
+  width: 100%;
+  padding: 64px 0 96px 0;
+}
+.registration__form {
+  display: flex;
+  flex-direction: column;
+}
+.registration__form p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  padding: 15px 0 0 0;
+}
+.registration__form h4 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+.registration__form-field {
+  margin: 20px 0 0 0;
+  padding: 15px 0 15px 17px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  border: 1px solid #A4A4A4;
+}
+.registration__form-radio {
+  margin: 33px 0;
+}
+.registration__form-radio input {
+  margin-right: 10px;
+}
+.registration__form-radio label {
+  margin-right: 20px;
+}
+.registration__form button {
+  display: block;
+  box-sizing: border-box;
+  margin-top: 39px;
+  padding: 17px 29px;
+  max-width: 170px;
+  background-color: #F16D7F;
+  outline: none;
+  border: none;
+  color: white;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+.registration__form button svg {
+  margin-left: 20px;
+}
+
+.loyality {
+  padding: 64px 0 96px 128px;
+}
+.loyality h2 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+.loyality p {
+  margin: 21px 0;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+.loyality ul {
+  padding-left: 25px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+.loyality ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+.loyality ul li::before {
+  content: url(../img/li.svg);
+  margin-right: 22px;
 }/*# sourceMappingURL=style.css.map */
