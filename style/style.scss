@@ -36,17 +36,20 @@ summary {
   color: $Hcolor;
 }
 .container {
-  max-width: 1160px;
+  max-width: 1140px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
 }
 header {
   background-color:$menubg;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   .menu {
     display: flex;
     justify-content: space-between;
-    padding: 18px 0;
+    align-items: center;
+    padding: 18px 30px;
 
     &__left {
       & img {
@@ -98,8 +101,7 @@ header {
     display: flex;
     justify-content: space-between;
     &img {
-      max-width: 359px;
-      width: 100%;
+      width: 49%;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -116,12 +118,13 @@ header {
         padding-top: 30px;
       }
       img {
+        width: 96px;
         margin: 0 auto;
       }
     }
     &form {
       text-align: center;
-      width: 557px;
+      width: 49%;
       margin: 150px 0 156px 0;
       h2 {
         font-family: Lato;
@@ -188,6 +191,7 @@ footer {
   .footercontent {
     display: flex;
     justify-content: space-between;
+    padding: 0 30px;
     &__text {
       padding-top: 9px;
       font-family: Lato;
@@ -211,7 +215,7 @@ footer {
   }
 }
 .intro {
-  height: 764px;
+  height: 55vh;
   background-color: $introbg;
   & .container {
     height: 100%;
@@ -219,11 +223,13 @@ footer {
     align-items: center;
     justify-content: flex-end;
     background-image: url(../img/sitelogo.png);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: -208px bottom;
+    background-position: -130px bottom;
     & .intro__text {
       border-left: 12px solid $Hcolor;
       padding-left: 20px;
+      margin-right: 40px;
       & h1 {
         font-family: Lato;
         font-style: normal;
@@ -247,53 +253,57 @@ footer {
       }
     }
   }
-} 
+}
 .category {
+  padding: 0 30px;
   & .top {
     margin: 0 auto;
-    margin-top: 65px;
+    margin-top: 3%;
     display: flex;
     justify-content: space-between;
     &__women {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 105px 0;
-      max-width: 360px;
+      padding: 9% 0;
+      max-width: 32%;
       width:100%; 
       background-image: url(../img/forwomen.jpg);
+      background-size: cover;
     }
     &__men {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 105px 0;
-      max-width: 360px;
+      padding: 9% 0;
+      max-width: 32%;
       width:100%; 
       background-image: url(../img/formen.jpg);
+      background-size: cover;
     }
     &__kids {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 105px 0;
-      max-width: 360px;
+      padding: 9% 0;
+      max-width: 32%;
       width:100%; 
       background-image: url(../img/forkids.jpg);
+      background-size: cover;
     }
   }
   & .bottom {
   width: 100%;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 2%;
   background: #233243;
     &__acces {
       width: 100%;
       margin: 0 auto;
-      margin-top: 30px;
       background: #233243;
-      padding: 65px 0;
-      background-image: url(../img/acessorise.jpg)
+      padding: 6% 0;
+      background-image: url(../img/acessorise.jpg);
+      background-size: cover;
     }
   }
 }
@@ -319,7 +329,7 @@ footer {
   &box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 48px 0; 
   }
   &__btn {
@@ -343,12 +353,16 @@ footer {
 .card {
   max-width: 360px;
   width: 100%;
-  text-align: start;
+  justify-items: left;
+  text-align: left;
   background: #F8F8F8;
   margin-bottom: 30px;
   .cardimg {
     position: relative;
     transition: 0.5s;
+    img {
+      width: 100%;
+    }
     &:hover {
       box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
     }
@@ -375,6 +389,8 @@ footer {
     }
   }
   .cardtext {
+    text-align: left;
+    justify-items: left;
     padding: 25px 28px 20px 16px;
     h4 {
       font-style: normal;
@@ -412,9 +428,10 @@ footer {
     justify-content: space-between;
     &__card {
       margin: 0 auto;
+      margin-bottom: 48px;
       text-align: center;
       padding: 0 10px;
-      max-width: 360px;
+      max-width: 32%;
       width: 100%;
       h4 {
         padding: 16px 0 28px 0;
@@ -437,8 +454,6 @@ footer {
     }
   }
 }
-
-
 //страница каталога
 .list {  
   background-color: #F1E4E6;
@@ -762,9 +777,10 @@ footer {
     }
   }
 }
-.cart-menu {
+.cart__menu {
   display: flex;
   justify-content: space-between;
+  width: 84%;
   button {
     background:none;
     border: 1px solid #A4A4A4;
@@ -773,8 +789,10 @@ footer {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
+    margin-right: 10%;
   }
   a {
+    display: inline-block;
     color: black;
     border: 1px solid #A4A4A4;
     text-align: center;
@@ -966,3 +984,170 @@ footer {
   }
 }
 //конец страницы регистрации
+@media (max-width: 1079px) {
+  .feturedbox {
+    justify-content: center;
+    .card:nth-child(odd) {
+      margin-right: 20px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .menu {
+    padding: 18px 30px;
+  }
+  .intro {
+    height: 55vh;
+    background-color: $introbg;
+    .container {
+      background-position: -50% bottom;
+    }
+    .intro__text {
+      border-left: 12px solid $Hcolor;
+      padding-left: 20px;
+      & h1 {
+        font-size: 44px;
+        line-height: 53px;
+      }
+      & h2 {
+        font-size: 24px;
+        line-height: 29px;
+        & span {
+          font-size: 24px;
+          color: $Hcolor;
+          line-height: 29px;
+        }
+      }
+    }
+  }
+  .infobox {
+    flex-direction: column;
+    &__card {
+      max-width: 100%;
+      width: 100%;
+      padding: 0;
+    }
+  }
+  .subscribe__flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &img {
+      margin: 64px 0 48px 0;
+    }
+    &form {
+      margin: 0 0 140px 0;
+    }
+  }
+} 
+@media (max-width: 739px) {
+  .intro {
+    height: 368px;
+    background-color: $introbg;
+    .container {
+      background:none;
+      justify-content: center;
+    }
+    .intro__text {
+      border-left: 12px solid $Hcolor;
+      padding-left: 20px;
+      margin: 0 30px;
+      justify-content: center;
+      align-items: center;
+      & h1 {
+        font-size: 44px;
+        line-height: 53px;
+      }
+      & h2 {
+        font-size: 24px;
+        line-height: 29px;
+        & span {
+          font-size: 24px;
+          color: $Hcolor;
+          line-height: 29px;
+        }
+      }
+    }
+  } 
+  .feturedbox {
+    justify-content: center;
+    .card:nth-child(odd) {
+      margin-right: 0;
+    }
+  } 
+}
+@media (max-width: 550px) {
+  .intro {
+    height: 368px;
+    background-color: $introbg;
+    .container {
+      background-position: left bottom;
+    }
+    .intro__text {
+      border-left: 12px solid $Hcolor;
+      padding-left: 20px;
+      & h1 {
+        font-size: 38px;
+        line-height: 46px;
+      }
+      & h2 {
+        font-size: 20px;
+        line-height: 24px;
+        & span {
+          font-size: 20px;
+          color: $Hcolor;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .category {
+    .top {
+      flex-direction: column;
+      width: 100%;
+      div {
+        max-width: 100%;
+        margin-bottom: 20px;
+        padding: 40% 0;
+      }
+    }
+    .bottom {
+      &__acces {
+        padding: 15% 0;
+      }
+    }
+  }
+  .footercontent {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
+    &__menu {
+    }
+  }
+  .menu {
+    padding: 18px 0;
+    margin: 0;
+  }
+  .intro__text {
+    padding: 0;
+    margin: 0;
+  }
+  .category {
+    margin: 0;
+  }
+  .fetured {
+    margin: 0;
+  }
+  .subscribe {
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .menu {
+    &__right {
+      .xs {
+        display: none;
+      }
+    }
+  }
+}
