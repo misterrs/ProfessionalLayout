@@ -1,0 +1,35 @@
+.shopinfo {
+    margin-top: 95px;
+    background-color: #222224;
+    width: 100%;
+    padding: 104px 0;
+    .infobox {
+      display: flex;
+      justify-content: space-between;
+      &__card {
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 10px;
+        max-width: 360px;
+        width: 100%;
+        h4 {
+          padding: 16px 0 28px 0;
+          font-family: Lato;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 19.96px;
+          line-height: 24px;
+          color: $whitecolor;
+        }
+        p {
+          font-family: Lato;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 13.972px;
+          line-height: 17px;
+          text-align: center;
+          color: $whitecolor;
+        }
+      }
+    }
+  }

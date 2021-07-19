@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Professional layout</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="menu">
+                <div class="menu__left">
+                    <a href="index.html"><img src="img/menu_logo.svg" alt="menulogo"></a>
+                    <a href="#"><img src="img/menu_search.svg" alt="menusearch"></a>
+                </div>
+                <div class="menu__right">
+                    <input type="checkbox" id="check">
+                    <label class="slide__menu" for="check"><img src="img/menu_list.svg" alt="menulist"></label>
+                    <nav class="menu__nav nav">
+                        <div class="wrap__nav">
+                            <label for="check" class="nav__close">X</label>
+                        </div>
+                        <h2>MENU</h2>
+                        <h3>MAN</h3>
+                        <ul>
+                            <li>Accessories</li>
+                            <li>Bags</li>
+                            <li>Denim</li>
+                            <li>T-Shirts</li>
+                        </ul>
+                        <h3>WOMEN</h3>
+                        <ul>
+                            <li>Accessories</li>
+                            <li>Jackets & Coats</li>
+                            <li>Polos</li>
+                            <li>T-Shirts</li>
+                            <li>Shirts</li>
+                        </ul>
+                        <h3>KIDS</h3>
+                        <ul>
+                            <li>Accessories</li>
+                            <li>Jackets & Coats</li>
+                            <li>Polos</li>
+                            <li>T-Shirts</li>
+                            <li>Shirts</li>
+                            <li>Bags</li>
+                        </ul>
+                    </nav>
+                    <a class="xs" href="registration.html"><img src="img/menu_profil.svg" alt="menuprofil"></a>
+                    <div class="cart__icon">
+                        <a class="xs" href="cart.html"><img class="icon" src="img/menu_recycle.svg"
+                                alt="menurecycle"></a>
+                        <span class="number">1</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="list">
+            <div class="container list_wrap-cart">
+                <h2>REGISTRATION</h2>
+            </div>
+        </section>
+        <div class="container reg-container">
+            <section class="registration">
+                <form class="registration__form" action="#">
+                    <h4>Your Name</h4>
+                    <input class="registration__form-field" type="text" name="firstname" placeholder="first name">
+                    <input class="registration__form-field" type="text" name="lastname" placeholder="last name">
+                    <div class="registration__form-radio">
+                        <input type="radio" id="male" name="sex" checked><label for="male">Male</label>
+                        <input type="radio" id="female" name="sex"><label for="female">Female</label>
+                    </div>
+                    <h4>Login details</h4>
+                    <input class="registration__form-field" type="email" placeholder="Email">
+                    <input class="registration__form-field" type="password" placeholder="password">
+                    <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
+                        letters</p>
+                    <button>JOIN NOW <svg width="17" height="10" viewBox="0 0 17 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z"
+                                fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z"
+                                fill="white" />
+                        </svg></button>
+                </form>
+            </section>
+            <section class="loyality">
+                <h2>LOYALTY HAS ITS PERKS</h2>
+                <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these
+                    as soon as you join:</p>
+                <ul>
+                    <li>15% off welcome offer</li>
+                    <li>Free shipping, returns and exchanges on all orders</li>
+                    <li>$10 off a purchase on your birthday</li>
+                    <li>Early access to products</li>
+                    <li>Exclusive offers & rewards</li>
+                </ul>
+            </section>
+        </div>
+        <section class="subscribe">
+            <div class="container">
+                <article class="subscribe__flex">
+                    <article class="subscribe__fleximg">
+                        <img src="img/imgsubscribe.png" alt="imgsub">
+                        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+                        </p>
+                    </article>
+                    <article class="subscribe__flexform">
+                        <h2>SUBSCRIBE</h2>
+                        <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                        <form class="subform" action="#">
+                            <input type="email" class="mail" placeholder="Enter Your Email">
+                            <input type="submit" class="subbtn" value="subscribe">
+                        </form>
+                    </article>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footercontent">
+                <p class="footercontent__text">© 2021 Brand All Rights Reserved.</p>
+                <div class="footercontent__menu">
+                    <a href="#"><svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.0883 16.28L19.5068 13.616H16.8901V11.8873C16.8901 11.1585 17.2557 10.4481 18.4276 10.4481H19.6171V8.17997C19.6171 8.17997 18.5376 8 17.5055 8C15.3506 8 13.9421 9.27593 13.9421 11.5857V13.616H11.5468V16.28H13.9421V22.72H16.8901V16.28H19.0883Z" />
+                        </svg></a>
+                    <a href="#"><svg class="svgitem" width="33" height="32" viewBox="0 0 33 32"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#insta)">
+                                <path
+                                    d="M16.139 12.6816C14.0238 12.6816 12.3177 14.3849 12.3177 16.4966C12.3177 18.6083 14.0238 20.3117 16.139 20.3117C18.2541 20.3117 19.9602 18.6083 19.9602 16.4966C19.9602 14.3849 18.2541 12.6816 16.139 12.6816ZM16.139 18.9769C14.7721 18.9769 13.6547 17.8646 13.6547 16.4966C13.6547 15.1287 14.7688 14.0164 16.139 14.0164C17.5092 14.0164 18.6233 15.1287 18.6233 16.4966C18.6233 17.8646 17.5058 18.9769 16.139 18.9769ZM21.0078 12.5255C21.0078 13.0203 20.6087 13.4154 20.1165 13.4154C19.621 13.4154 19.2252 13.0169 19.2252 12.5255C19.2252 12.0341 19.6243 11.6357 20.1165 11.6357C20.6087 11.6357 21.0078 12.0341 21.0078 12.5255ZM23.5386 13.4287C23.4821 12.2367 23.2094 11.1808 22.3347 10.3109C21.4634 9.44097 20.4058 9.1687 19.2119 9.10894C17.9814 9.03921 14.2932 9.03921 13.0627 9.10894C11.8721 9.16538 10.8145 9.43765 9.93987 10.3076C9.06522 11.1775 8.79584 12.2333 8.73597 13.4253C8.66613 14.6539 8.66613 18.3361 8.73597 19.5646C8.79251 20.7566 9.06522 21.8124 9.93987 22.6824C10.8145 23.5523 11.8688 23.8246 13.0627 23.8843C14.2932 23.9541 17.9814 23.9541 19.2119 23.8843C20.4058 23.8279 21.4634 23.5556 22.3347 22.6824C23.2061 21.8124 23.4788 20.7566 23.5386 19.5646C23.6085 18.3361 23.6085 14.6572 23.5386 13.4287ZM21.949 20.8828C21.6895 21.5335 21.1874 22.0349 20.5322 22.2972C19.5511 22.6857 17.2231 22.596 16.139 22.596C15.0548 22.596 12.7235 22.6824 11.7457 22.2972C11.0939 22.0382 10.5917 21.5369 10.329 20.8828C9.93987 19.9033 10.0297 17.5791 10.0297 16.4966C10.0297 15.4142 9.9432 13.0867 10.329 12.1105C10.5884 11.4597 11.0906 10.9583 11.7457 10.696C12.7268 10.3076 15.0548 10.3972 16.139 10.3972C17.2231 10.3972 19.5545 10.3109 20.5322 10.696C21.184 10.955 21.6862 11.4564 21.949 12.1105C22.3381 13.09 22.2483 15.4142 22.2483 16.4966C22.2483 17.5791 22.3381 19.9066 21.949 20.8828Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="insta">
+                                    <rect width="14.8991" height="17" transform="translate(8.68555 8)" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                    <a href="#"><svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#social)">
+                                <path
+                                    d="M16.7402 8.20312C13.5555 8.20312 10.4081 10.3406 10.4081 13.8C10.4081 16 11.6372 17.25 12.3822 17.25C12.6895 17.25 12.8664 16.3875 12.8664 16.1438C12.8664 15.8531 12.1308 15.2344 12.1308 14.025C12.1308 11.5125 14.0304 9.73125 16.4887 9.73125C18.6026 9.73125 20.167 10.9406 20.167 13.1625C20.167 14.8219 19.5058 17.9344 17.3641 17.9344C16.5912 17.9344 15.93 17.3719 15.93 16.5656C15.93 15.3844 16.7495 14.2406 16.7495 13.0219C16.7495 10.9531 13.8348 11.3281 13.8348 13.8281C13.8348 14.3531 13.9 14.9344 14.1328 15.4125C13.7045 17.2688 12.8292 20.0344 12.8292 21.9469C12.8292 22.5375 12.913 23.1188 12.9688 23.7094C13.0744 23.8281 13.0216 23.8156 13.183 23.7563C14.7474 21.6 14.6915 21.1781 15.3992 18.3562C15.781 19.0875 16.7681 19.4812 17.5503 19.4812C20.8467 19.4812 22.3273 16.2469 22.3273 13.3313C22.3273 10.2281 19.6641 8.20312 16.7402 8.20312Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="social">
+                                    <rect width="11.9193" height="16" transform="translate(10.4081 8)" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                    <a href="#"><svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#twit)">
+                                <path
+                                    d="M22.418 12.7411C22.4281 12.8832 22.4281 13.0253 22.4281 13.1675C22.4281 17.5025 19.1508 22.4974 13.1609 22.4974C11.3156 22.4974 9.60129 21.9593 8.15927 21.0253C8.42146 21.0558 8.67354 21.0659 8.94582 21.0659C10.4685 21.0659 11.8702 20.5482 12.9895 19.6649C11.5576 19.6345 10.3576 18.6903 9.94412 17.3908C10.1458 17.4213 10.3475 17.4416 10.5593 17.4416C10.8517 17.4416 11.1442 17.4009 11.4164 17.3299C9.92398 17.0253 8.80462 15.7055 8.80462 14.1116V14.071C9.23821 14.3147 9.74246 14.467 10.2769 14.4873C9.39956 13.8984 8.8248 12.8933 8.8248 11.7563C8.8248 11.1472 8.98611 10.5888 9.26848 10.1015C10.8718 12.0913 13.2819 13.3908 15.9844 13.5329C15.934 13.2893 15.9037 13.0355 15.9037 12.7817C15.9037 10.9746 17.3558 9.5025 19.1609 9.5025C20.0987 9.5025 20.9457 9.89844 21.5407 10.538C22.2768 10.3959 22.9827 10.1218 23.6079 9.74616C23.3659 10.5076 22.8516 11.1472 22.176 11.5533C22.8314 11.4822 23.4667 11.2994 24.0516 11.0457C23.608 11.6954 23.0533 12.274 22.418 12.7411Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="twit">
+                                    <rect width="15.8924" height="16" transform="translate(8.15927 8)" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
