@@ -16,19 +16,55 @@
 
     <header>
         <div class="container">
-            <nav class="menu">
+            <div class="menu">
                 <div class="menu__left">
                     <a href="index.html"><img src="img/menu_logo.svg" alt="menulogo"></a>
                     <a href="#"><img src="img/menu_search.svg" alt="menusearch"></a>
                 </div>
                 <div class="menu__right">
-                    <a href="#"><img src="img/menu_list.svg" alt="menulist"></a>
-                    <a href="registration.html"><img src="img/menu_profil.svg" alt="menuprofil"></a>
-                    <a href="cart.html"><img class="icon" src="img/menu_recycle.svg" alt="menurecycle"></a>
-                    <span>1</span>
+                    <input type="checkbox" id="check">
+                    <label class="slide__menu" for="check"><img src="img/menu_list.svg" alt="menulist"></label>
+                    <nav class="menu__nav nav">
+                        <div class="wrap__nav">
+                            <label for="check" class="nav__close">X</label>
+                        </div>
+                        <h2>MENU</h2>
+                        <h3>MAN</h3>
+                        <ul>
+                            <li>Accessories</li>
+                            <li>Bags</li>
+                            <li>Denim</li>
+                            <li>T-Shirts</li>
+                        </ul>
+                        <h3>WOMEN</h3>
+                        <ul>
+                            <li>Accessories</li>
+                            <li>Jackets & Coats</li>
+                            <li>Polos</li>
+                            <li>T-Shirts</li>
+                            <li>Shirts</li>
+                        </ul>
+                        <h3>KIDS</h3>
+                        <ul>
+                            <li>Accessories</li>
+                            <li>Jackets & Coats</li>
+                            <li>Polos</li>
+                            <li>T-Shirts</li>
+                            <li>Shirts</li>
+                            <li>Bags</li>
+                        </ul>
+                    </nav>
+                    <a class="xs" href="registration.html"><img src="img/menu_profil.svg" alt="menuprofil"></a>
+                    <div class="cart__icon">
+                        <a class="xs" href="cart.html"><img class="icon" src="img/menu_recycle.svg"
+                                alt="menurecycle"></a>
+                        <span class="number">1</span>
+                    </div>
+
                 </div>
-            </nav>
+            </div>
         </div>
+
     </header>
 
     <main>
