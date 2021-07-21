@@ -59,7 +59,7 @@ header {
     display: block;
   }
   .menu__nav {
-    width: 15vw;
+    width: 232px;
     box-sizing: border-box;
     position: absolute;
     height: calc(100vh - 77px);
@@ -384,6 +384,10 @@ footer {
       background-size: cover;
     }
   }
+  a:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
 }
 .fetured {
   padding: 96px 0 0 0;
@@ -429,6 +433,8 @@ footer {
   }
 }
 .card {
+  cursor: pointer;
+  position: relative;
   max-width: 360px;
   width: 100%;
   justify-items: left;
@@ -441,35 +447,39 @@ footer {
     img {
       width: 100%;
     }
-    &:hover {
-      box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  }
+  .cardimg__over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 72%;
+    background-color: rgba(58, 56, 56, 0.83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s; 
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
     }
-    &__over {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      background-color: rgba(58, 56, 56, 0.83);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      transition: 1s; 
-      &:hover {
-        opacity: 1;
-      } 
-      button {
-        background: none;
-        border: none;
-        cursor: pointer;
-      }
-    }
+  }
+  &:hover {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  }
+  &:hover .cardimg__over {
+    opacity: 1;
   }
   .cardtext {
     text-align: left;
     justify-items: left;
     padding: 25px 28px 20px 16px;
+    h4:hover {
+      opacity: 0.5;
+      transition: 0.5s;
+    }
     h4 {
       font-style: normal;
       font-weight: normal;
@@ -494,6 +504,9 @@ footer {
       line-height: 19px;
       color:$Hcolor; 
     } 
+  }
+  .card:hover ~.cardimg__over {
+    opacity: 1;
   }
 }
 .shopinfo {
@@ -534,6 +547,7 @@ footer {
 }
 //страница каталога
 .list {  
+  cursor: pointer;
   background-color: #F1E4E6;
   padding: 60px 10px;
   &__wrap {
@@ -614,14 +628,20 @@ footer {
         div {
           margin: 29px 0 13px 33px;
         }
-        p {
+        li {
+          list-style: none;
           font-family: Lato;
           font-style: normal;
           font-weight: normal;
           font-size: 14px;
           line-height: 17px;
           color: #6F6E6E;
-          padding-bottom: 11px;
+          padding: 0 0 11px 20px;
+          &:hover {
+            padding: 0 0 11px 25px;
+            color: $Hcolor;
+            transition: 0.5s;
+          }
         }
       }
     }
@@ -711,7 +731,7 @@ footer {
   background-color: #FFFFFF;
   margin: -65px auto 0;
   &__wrap {
-    padding: 0px 25% 30% 25%;
+    padding: 0px 25% 5% 25%;
     h2 {
       padding-top: 65px;
       font-family: Lato;
@@ -781,6 +801,13 @@ footer {
     cursor: pointer;
     svg {
       fill: #FF6A6A;
+    }
+    &:hover {
+      background-color: $Hcolor;
+      transition: 0.5s;
+      svg {
+        fill: white;
+      }
     }
   }
 }
@@ -902,7 +929,7 @@ footer {
     input {
       max-width: 100%;
       width: 100%;
-      padding: 13px 0 16px 17px;
+      padding: 13px 17px 16px 17px;
       margin-bottom: 20px;
       font-style: normal;
       font-weight: 300;
@@ -1001,7 +1028,7 @@ footer {
     }
     &-field {
       margin: 20px 0 0 0;
-      padding: 10px 0 10px 17px;
+      padding: 10px 17px 10px 17px;
       font-family: Lato;
       font-style: normal;
       font-weight: 300;
